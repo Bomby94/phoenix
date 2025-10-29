@@ -17,8 +17,8 @@ class MonitoringController extends AbstractController
     #[Route('monitoring')]
     public function monitoring(): \Symfony\Component\HttpFoundation\JsonResponse
     {
-        $this->logger->error('first sentry error');
+        $this->logger->debug('first kibana log');
 
-        return $this->json(['status' => 'ok']);
+        return $this->json(['status' => 'oasdfvk']);
     }
 }
